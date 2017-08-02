@@ -6,10 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by Administrator on 2017/7/28.
+ * Created by abc on 2017/8/2.
  */
 @Retention(RetentionPolicy.CLASS)
-@Target(ElementType.TYPE)
-public @interface Meta {
+@Target({ElementType.METHOD,ElementType.FIELD})
+public @interface Info {
     String[] value();
 }
